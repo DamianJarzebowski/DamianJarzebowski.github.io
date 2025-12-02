@@ -1,0 +1,9 @@
+<!-- Dotted Grid Pattern for Backgrounds -->
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="rgba(148, 163, 184, 0.1)" />
+    </pattern>
+  </defs>
+  <rect width="100" height="100" fill="url(#dot-grid)" />
+</svg>

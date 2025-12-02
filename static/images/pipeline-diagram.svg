@@ -1,0 +1,78 @@
+<!-- Animated Tech Pipeline Diagram SVG -->
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.15;">
+  <defs>
+    <!-- Gradient Definitions -->
+    <linearGradient id="pipeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.5" />
+    </linearGradient>
+    
+    <!-- Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Pulse Animation -->
+    <style>
+      .pulse-dot {
+        animation: pulse 3s ease-in-out infinite;
+      }
+      .flow-line {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: flow 4s linear infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.3; r: 4; }
+        50% { opacity: 1; r: 6; }
+      }
+      @keyframes flow {
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+  </defs>
+  
+  <!-- Pipeline Nodes -->
+  <g id="nodes">
+    <!-- Code -->
+    <circle cx="100" cy="200" r="30" fill="url(#pipeGradient)" filter="url(#glow)" />
+    <text x="100" y="205" text-anchor="middle" fill="#f8fafc" font-size="24">💻</text>
+    
+    <!-- Build -->
+    <circle cx="250" cy="200" r="30" fill="url(#pipeGradient)" filter="url(#glow)" />
+    <text x="250" y="205" text-anchor="middle" fill="#f8fafc" font-size="24">🔨</text>
+    
+    <!-- Test -->
+    <circle cx="400" cy="200" r="30" fill="url(#pipeGradient)" filter="url(#glow)" />
+    <text x="400" y="205" text-anchor="middle" fill="#f8fafc" font-size="24">✓</text>
+    
+    <!-- Deploy -->
+    <circle cx="550" cy="200" r="30" fill="url(#pipeGradient)" filter="url(#glow)" />
+    <text x="550" y="205" text-anchor="middle" fill="#f8fafc" font-size="24">🚀</text>
+    
+    <!-- Monitor -->
+    <circle cx="700" cy="200" r="30" fill="url(#pipeGradient)" filter="url(#glow)" />
+    <text x="700" y="205" text-anchor="middle" fill="#f8fafc" font-size="24">📊</text>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <g id="connections">
+    <line class="flow-line" x1="130" y1="200" x2="220" y2="200" stroke="url(#pipeGradient)" stroke-width="3" />
+    <line class="flow-line" x1="280" y1="200" x2="370" y2="200" stroke="url(#pipeGradient)" stroke-width="3" style="animation-delay: 1s;" />
+    <line class="flow-line" x1="430" y1="200" x2="520" y2="200" stroke="url(#pipeGradient)" stroke-width="3" style="animation-delay: 2s;" />
+    <line class="flow-line" x1="580" y1="200" x2="670" y2="200" stroke="url(#pipeGradient)" stroke-width="3" style="animation-delay: 3s;" />
+  </g>
+  
+  <!-- Animated Data Points -->
+  <g id="data-points">
+    <circle class="pulse-dot" cx="100" cy="200" r="4" fill="#3b82f6" />
+    <circle class="pulse-dot" cx="250" cy="200" r="4" fill="#3b82f6" style="animation-delay: 1s;" />
+    <circle class="pulse-dot" cx="400" cy="200" r="4" fill="#3b82f6" style="animation-delay: 2s;" />
+    <circle class="pulse-dot" cx="550" cy="200" r="4" fill="#3b82f6" style="animation-delay: 3s;" />
+    <circle class="pulse-dot" cx="700" cy="200" r="4" fill="#3b82f6" style="animation-delay: 4s;" />
+  </g>
+</svg>

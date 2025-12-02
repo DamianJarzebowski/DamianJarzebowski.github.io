@@ -1,0 +1,199 @@
+<style>
+/* Premium Navigation Header */
+.premium-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(2, 6, 23, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  transition: all var(--transition-base);
+}
+
+.premium-header.scrolled {
+  background: rgba(2, 6, 23, 0.95);
+  box-shadow: var(--shadow-lg);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem var(--space-xl);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  letter-spacing: -0.03em;
+}
+
+.logo-accent {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-menu {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--color-text-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-accent);
+  transition: width var(--transition-base);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.header-cta {
+  padding: 0.625rem 1.25rem;
+  font-size: var(--text-sm);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-text-primary);
+  font-size: var(--text-2xl);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-secondary);
+    flex-direction: column;
+    padding: var(--space-xl);
+    border-bottom: 1px solid var(--color-border);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all var(--transition-base);
+  }
+  
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
+</style>
+
+<header class="premium-header" id="header">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo-area">
+      <a href="/" class="logo-text">
+        Clar<span class="logo-accent">Ops</span>
+      </a>
+    </div>
+    
+    <!-- Navigation -->
+    <nav>
+      <ul class="nav-menu" id="nav-menu">
+        {{- range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}" class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+            {{ .Name }}
+          </a>
+        </li>
+        {{- end }}
+        <li>
+          <a href="/contact/" class="btn btn-primary header-cta">
+            Rozpocznij współpracę →
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- Spacer to prevent content from hiding under fixed header -->
+<div style="height: 72px;"></div>
+
+<script>
+// Smooth scroll behavior and header state
+(function() {
+  const header = document.getElementById('header');
+  const mobileToggle = document.getElementById('mobile-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  
+  // Header scroll effect
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+  
+  // Mobile menu toggle
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+      this.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+    });
+  }
+  
+  // Close mobile menu on link click
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      if (window.innerWidth <= 768) {
+        navMenu.classList.remove('active');
+        if (mobileToggle) mobileToggle.textContent = '☰';
+      }
+    });
+  });
+})();
+</script>

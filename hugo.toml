@@ -4,8 +4,16 @@ title = 'ClarOps - Damian Jarzębowski'
 theme = 'PaperMod'
 
 [params]
-  description = "ClarOps - Profesjonalne usługi IT i DevOps"
+  description = "ClarOps - Profesjonalne usługi IT i DevOps. Automatyzacja, Cloud, Kubernetes."
   author = "Damian Jarzębowski"
+  
+  # Disable default PaperMod features - we use custom design
+  disableThemeToggle = true
+  ShowShareButtons = false
+  ShowReadingTime = false
+  ShowBreadCrumbs = false
+  ShowPostNavLinks = false
+  ShowCodeCopyButtons = true
   
   # Social links
   [[params.socialIcons]]
