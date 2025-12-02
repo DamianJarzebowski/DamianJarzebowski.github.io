@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Jarzębowski - Strona Główna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DJ</div>
+            <ul class="nav-links">
+                <li><a href="#home">Strona Główna</a></li>
+                <li><a href="#about">O Mnie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Witaj na mojej stronie!</h1>
+                <p>To jest prosta aplikacja HTML serwowana jako statyczny kontent.</p>
+                <button id="cta-button" class="cta-button">Dowiedz się więcej</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>O Mnie</h2>
+            <p>Cześć! Jestem Damian Jarzębowski. Ta strona została stworzona jako przykład prostej aplikacji HTML hostowanej na GitHub Pages.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projekty</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Projekt 1</h3>
+                    <p>Opis pierwszego projektu.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projekt 2</h3>
+                    <p>Opis drugiego projektu.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projekt 3</h3>
+                    <p>Opis trzeciego projektu.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się ze mną poprzez poniższy formularz.</p>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+                <input type="email" id="email" name="email" placeholder="Twój email" required>
+                <textarea id="message" name="message" placeholder="Twoja wiadomość" required></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Damian Jarzębowski. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
