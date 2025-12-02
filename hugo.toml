@@ -18,15 +18,15 @@ theme = 'PaperMod'
   # Social links
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://linkedin.com"
-  
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/DamianJarzebowski"
+    url = "https://www.linkedin.com/in/damian-jarzebowski/"
   
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:kontakt@clarops.com"
+    url = "mailto:damian.r.jarzebowski@gmail.com"
+  
+  [[params.socialIcons]]
+    name = "phone"
+    url = "tel:+48739217107"
 
   # Home page settings
   [params.homeInfoParams]

@@ -10,14 +10,19 @@ Szukasz wsparcia w projektach IT lub DevOps? Chętnie pomogę!
 
 ## 📧 Email
 
-**kontakt@clarops.com**
+**damian.r.jarzebowski@gmail.com**
 
 Odpowiadam zazwyczaj w ciągu 24 godzin.
 
-## 🔗 Social Media
+## � Telefon
 
-- **LinkedIn**: [linkedin.com](https://linkedin.com)
-- **GitHub**: [github.com/DamianJarzebowski](https://github.com/DamianJarzebowski)
+**+48 739 217 107**
+
+Możesz zadzwonić lub napisać SMS/WhatsApp
+
+## 🔗 LinkedIn
+
+- **Profil**: [linkedin.com/in/damian-jarzebowski](https://www.linkedin.com/in/damian-jarzebowski/)
 
 ## 💼 Współpraca
 
@@ -44,4 +49,5 @@ Oferuję różne formy współpracy:
 
 Niezależnie od tego, czy masz konkretny projekt, czy po prostu pytanie - zapraszam do kontaktu. Każda rozmowa jest dla mnie wartościowa!
 
-📧 **kontakt@clarops.com**
+📧 **damian.r.jarzebowski@gmail.com**  
+📱 **+48 739 217 107**
