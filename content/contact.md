@@ -1,53 +1,53 @@
 ---
-title: "Kontakt"
+title: "Contact"
 date: 2025-12-02
 draft: false
 ---
 
-# Skontaktuj się
+# Get in Touch
 
-Szukasz wsparcia w projektach IT lub DevOps? Chętnie pomogę!
+Looking for support with IT or DevOps projects? I'd be happy to help!
 
 ## 📧 Email
 
 **damian.r.jarzebowski@gmail.com**
 
-Odpowiadam zazwyczaj w ciągu 24 godzin.
+I typically respond within 24 hours.
 
-## � Telefon
+## 📱 Phone
 
 **+48 739 217 107**
 
-Możesz zadzwonić lub napisać SMS/WhatsApp
+Feel free to call or text via SMS
 
 ## 🔗 LinkedIn
 
-- **Profil**: [linkedin.com/in/damian-jarzebowski](https://www.linkedin.com/in/damian-jarzebowski/)
+- **Profile**: [linkedin.com/in/damian-jarzebowski](https://www.linkedin.com/in/damian-jarzebowski/)
 
-## 💼 Współpraca
+## 💼 Collaboration
 
-Oferuję różne formy współpracy:
-- 🎯 Projekty jednorazowe
-- 🔄 Wsparcie ciągłe (retainer)
-- 🏢 Konsulting i audyty
-- 📚 Szkolenia i warsztaty
+I offer various forms of collaboration:
+- 🎯 One-time projects
+- 🔄 Ongoing support (retainer)
+- 🏢 Consulting and audits
+- 📚 Training and workshops
 
-## 📍 Lokalizacja
+## 📍 Location
 
-**Polska** - praca zdalna i stacjonarna
+**Poland** - remote and on-site work
 
 ---
 
-## Proces współpracy
+## Collaboration Process
 
-1. **Konsultacja** - bezpłatna rozmowa o Twoich potrzebach
-2. **Propozycja** - przedstawiam rozwiązanie i wycenę
-3. **Realizacja** - wspólnie pracujemy nad projektem
-4. **Wsparcie** - jestem dostępny po zakończeniu projektu
+1. **Consultation** - free discussion about your needs
+2. **Proposal** - I present a solution and quote
+3. **Implementation** - we work together on the project
+4. **Support** - I'm available after project completion
 
-## Napisz do mnie
+## Write to Me
 
-Niezależnie od tego, czy masz konkretny projekt, czy po prostu pytanie - zapraszam do kontaktu. Każda rozmowa jest dla mnie wartościowa!
+Whether you have a specific project or just a question - feel free to reach out. Every conversation is valuable to me!
 
 📧 **damian.r.jarzebowski@gmail.com**  
 📱 **+48 739 217 107**

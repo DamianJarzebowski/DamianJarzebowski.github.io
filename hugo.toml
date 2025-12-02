@@ -1,10 +1,10 @@
 baseURL = 'https://clarops.com/'
-languageCode = 'pl-pl'
+languageCode = 'en-us'
 title = 'ClarOps - Damian Jarzębowski'
 theme = 'PaperMod'
 
 [params]
-  description = "ClarOps - Profesjonalne usługi IT i DevOps. Automatyzacja, Cloud, Kubernetes."
+  description = "ClarOps - Professional DevOps & Cloud Consulting. Automation, Cloud, Kubernetes."
   author = "Damian Jarzębowski"
   
   # Disable default PaperMod features - we use custom design
@@ -30,14 +30,14 @@ theme = 'PaperMod'
 
   # Home page settings
   [params.homeInfoParams]
-    Title = "Witaj w ClarOps! 👋"
+    Title = "Welcome to ClarOps! 👋"
     Content = """
-    Profesjonalne usługi IT, DevOps i Cloud Solutions.
+    Professional IT services, DevOps and Cloud Solutions.
     
-    Pomagam firmom w automatyzacji procesów, optymalizacji infrastruktury i wdrażaniu nowoczesnych rozwiązań chmurowych.
+    I help companies automate processes, optimize infrastructure, and implement modern cloud solutions.
     """
 
-# Menu nawigacyjne
+# Navigation menu
 [[menu.main]]
   identifier = "home"
   name = "Home"
@@ -46,21 +46,33 @@ theme = 'PaperMod'
 
 [[menu.main]]
   identifier = "about"
-  name = "O mnie"
+  name = "About"
   url = "/about/"
   weight = 2
 
 [[menu.main]]
   identifier = "services"
-  name = "Usługi"
+  name = "Services"
   url = "/services/"
   weight = 3
 
 [[menu.main]]
   identifier = "contact"
-  name = "Kontakt"
+  name = "Contact"
   url = "/contact/"
   weight = 4
+
+[[menu.main]]
+  identifier = "terms"
+  name = "Terms"
+  url = "/terms-of-service/"
+  weight = 5
+
+[[menu.main]]
+  identifier = "privacy"
+  name = "Privacy"
+  url = "/privacy-policy/"
+  weight = 6
 
 # Output formats
 [outputs]

@@ -1,33 +1,33 @@
 ---
-title: "O mnie"
+title: "About"
 date: 2025-12-02
 draft: false
 ---
 
-# O ClarOps
+# About ClarOps
 
-Jestem **Damian Jarzębowski**, założyciel ClarOps - firmy specjalizującej się w profesjonalnych usługach IT i DevOps.
+I'm **Damian Jarzębowski**, founder of ClarOps - a company specializing in professional IT and DevOps services.
 
-## Moja misja
+## My Mission
 
-Pomagam firmom i organizacjom w:
-- 🚀 **Automatyzacji procesów** - eliminuję powtarzalne zadania
-- ☁️ **Optymalizacji infrastruktury chmurowej** - AWS, Azure, GCP
-- 🔧 **Wdrażaniu nowoczesnych praktyk DevOps** - CI/CD, IaC, monitoring
-- 📈 **Zwiększaniu efektywności** - szybsze dostarczanie wartości biznesowej
+I help companies and organizations with:
+- 🚀 **Process Automation** - eliminate repetitive tasks
+- ☁️ **Cloud Infrastructure Optimization** - AWS, Azure, GCP
+- 🔧 **Modern DevOps Practices Implementation** - CI/CD, IaC, monitoring
+- 📈 **Efficiency Improvement** - faster business value delivery
 
-## Doświadczenie
+## Experience
 
-Z pasją rozwijam projekty IT, łącząc wiedzę techniczną z praktycznym podejściem do rozwiązywania problemów biznesowych.
+I passionately develop IT projects, combining technical expertise with a practical approach to solving business problems.
 
-## Podejście do pracy
+## Work Approach
 
-Wierzę w:
-- ✅ Automatyzację zamiast manualnych procesów
-- ✅ Infrastrukturę jako kod
-- ✅ Ciągłe doskonalenie i uczenie się
-- ✅ Transparentną komunikację z klientami
+I believe in:
+- ✅ Automation over manual processes
+- ✅ Infrastructure as Code
+- ✅ Continuous improvement and learning
+- ✅ Transparent communication with clients
 
-## Skontaktuj się
+## Get in Touch
 
-Jeśli szukasz partnera do realizacji projektów IT lub potrzebujesz wsparcia w obszarze DevOps, zapraszam do [kontaktu](/contact/).
+If you're looking for a partner to implement IT projects or need support in the DevOps area, feel free to [contact me](/contact/).

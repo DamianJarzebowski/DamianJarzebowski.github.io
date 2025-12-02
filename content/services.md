@@ -1,54 +1,54 @@
 ---
-title: "Usługi"
+title: "Services"
 date: 2025-12-02
 draft: false
 ---
 
-# Usługi ClarOps
+# ClarOps Services
 
-Oferuję kompleksowe usługi IT dostosowane do potrzeb Twojej firmy.
+I offer comprehensive IT services tailored to your company's needs.
 
-## 🚀 DevOps & Automatyzacja
+## 🚀 DevOps & Automation
 
-- **CI/CD Pipelines** - automatyczne budowanie, testowanie i wdrażanie aplikacji
+- **CI/CD Pipelines** - automatic building, testing, and application deployment
 - **Infrastructure as Code** - Terraform, CloudFormation, Ansible
-- **Containeryzacja** - Docker, Kubernetes, Helm
-- **Automatyzacja procesów** - skrypty, narzędzia, integracje
+- **Containerization** - Docker, Kubernetes, Helm
+- **Process Automation** - scripts, tools, integrations
 
 ## ☁️ Cloud Solutions
 
-- **AWS** - architektura, migracja, optymalizacja kosztów
-- **Azure** - wdrożenia chmurowe, DevOps
-- **Google Cloud Platform** - infrastruktura i usługi chmurowe
-- **Multi-cloud** - strategie i implementacja
+- **AWS** - architecture, migration, cost optimization
+- **Azure** - cloud deployments, DevOps
+- **Google Cloud Platform** - cloud infrastructure and services
+- **Multi-cloud** - strategies and implementation
 
-## 🔧 Infrastruktura IT
+## 🔧 IT Infrastructure
 
-- **Projektowanie architektury** - skalowalne i bezpieczne rozwiązania
-- **Monitoring i logging** - Prometheus, Grafana, ELK Stack
-- **Backup i disaster recovery** - strategie bezpieczeństwa danych
-- **Performance optimization** - analiza i poprawa wydajności
+- **Architecture Design** - scalable and secure solutions
+- **Monitoring and Logging** - Prometheus, Grafana, ELK Stack
+- **Backup and Disaster Recovery** - data security strategies
+- **Performance Optimization** - analysis and performance improvement
 
-## 📊 Konsulting IT
+## 📊 IT Consulting
 
-- **Audyt infrastruktury** - ocena stanu obecnego i rekomendacje
-- **Strategia DevOps** - roadmapa wdrożenia najlepszych praktyk
-- **Code review** - przegląd kodu i IaC
-- **Szkolenia** - warsztaty i transfer wiedzy dla zespołów
+- **Infrastructure Audit** - current state assessment and recommendations
+- **DevOps Strategy** - roadmap for implementing best practices
+- **Code Review** - code and IaC review
+- **Training** - workshops and knowledge transfer for teams
 
-## 💡 Projekty Custom
+## 💡 Custom Projects
 
-Każdy projekt jest unikalny. Jeśli potrzebujesz rozwiązania szytego na miarę, skontaktuj się - wspólnie znajdziemy najlepsze rozwiązanie.
+Every project is unique. If you need a tailored solution, get in touch - together we'll find the best solution.
 
 ---
 
-## Dlaczego ClarOps?
+## Why ClarOps?
 
-✅ **Doświadczenie** - lata praktyki w środowiskach produkcyjnych  
-✅ **Nowoczesne technologie** - zawsze na bieżąco z branżą  
-✅ **Praktyczne podejście** - rozwiązania, które działają  
-✅ **Wsparcie** - dostępność i ciągła komunikacja  
+✅ **Experience** - years of practice in production environments  
+✅ **Modern Technologies** - always up to date with the industry  
+✅ **Practical Approach** - solutions that work  
+✅ **Support** - availability and continuous communication  
 
-## Gotowy na współpracę?
+## Ready to Collaborate?
 
-[Skontaktuj się ze mną](/contact/) i porozmawiajmy o Twoim projekcie!
+[Contact me](/contact/) and let's talk about your project!
