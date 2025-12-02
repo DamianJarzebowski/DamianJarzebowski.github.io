@@ -1,0 +1,281 @@
+{{ define "main" }}
+
+<style>
+/* Single Page Styles */
+.single-page {
+  min-height: calc(100vh - 72px);
+  padding: var(--space-4xl) 0;
+  background: var(--color-bg-primary);
+}
+
+.single-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-md);
+  line-height: var(--leading-tight);
+}
+
+.page-meta {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-tertiary);
+  font-size: var(--text-sm);
+}
+
+.page-content {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  box-shadow: var(--shadow-md);
+}
+
+/* Content Typography */
+.page-content h1 {
+  font-size: var(--text-4xl);
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-primary);
+  position: relative;
+  padding-bottom: var(--space-md);
+}
+
+.page-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+}
+
+.page-content h2 {
+  font-size: var(--text-3xl);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-primary);
+}
+
+.page-content h3 {
+  font-size: var(--text-2xl);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+  color: var(--color-text-primary);
+}
+
+.page-content h1:first-child {
+  margin-top: 0;
+}
+
+.page-content p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.page-content strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.page-content a {
+  color: var(--color-accent-blue);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.page-content a:hover {
+  color: var(--color-accent-blue-hover);
+  border-bottom-color: var(--color-accent-blue-hover);
+}
+
+/* Lists */
+.page-content ul,
+.page-content ol {
+  margin: var(--space-lg) 0;
+  padding-left: var(--space-2xl);
+}
+
+.page-content ul {
+  list-style: none;
+}
+
+.page-content ul li {
+  position: relative;
+  margin-bottom: var(--space-md);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  padding-left: var(--space-lg);
+}
+
+.page-content ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-blue);
+  font-weight: 700;
+}
+
+.page-content ol li {
+  margin-bottom: var(--space-md);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+}
+
+/* Code blocks */
+.page-content code {
+  background: var(--color-bg-secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--color-accent-cyan);
+  border: 1px solid var(--color-border);
+}
+
+.page-content pre {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  overflow-x: auto;
+  margin: var(--space-lg) 0;
+}
+
+.page-content pre code {
+  background: none;
+  padding: 0;
+  border: none;
+  font-size: var(--text-sm);
+}
+
+/* Blockquotes */
+.page-content blockquote {
+  border-left: 4px solid var(--color-accent-blue);
+  padding-left: var(--space-lg);
+  margin: var(--space-xl) 0;
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+
+/* Horizontal rule */
+.page-content hr {
+  border: none;
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-2xl) 0;
+}
+
+/* CTA Section at bottom */
+.page-cta {
+  margin-top: var(--space-3xl);
+  padding: var(--space-2xl);
+  background: var(--gradient-accent);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.page-cta h3 {
+  color: white;
+  margin-bottom: var(--space-md);
+}
+
+.page-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-lg);
+}
+
+.page-cta .btn {
+  background: white;
+  color: var(--color-bg-primary);
+}
+
+.page-cta .btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: var(--shadow-xl);
+  color: var(--color-bg-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .single-page {
+    padding: var(--space-2xl) 0;
+  }
+  
+  .page-content {
+    padding: var(--space-xl);
+  }
+  
+  .page-content h1 {
+    font-size: var(--text-3xl);
+  }
+  
+  .page-content h2 {
+    font-size: var(--text-2xl);
+  }
+  
+  .page-content p,
+  .page-content li {
+    font-size: var(--text-base);
+  }
+}
+</style>
+
+<article class="single-page">
+  <div class="single-container">
+    <!-- Page Header -->
+    <header class="page-header">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ if .Date }}
+      <div class="page-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "2 January 2006" }}
+        </time>
+      </div>
+      {{ end }}
+    </header>
+    
+    <!-- Page Content -->
+    <div class="page-content">
+      {{ .Content }}
+      
+      <!-- CTA for contact pages -->
+      {{ if not (or (eq .Title "Kontakt") (eq .Title "Contact")) }}
+      <div class="page-cta">
+        <h3>Gotowy na współpracę?</h3>
+        <p>Skontaktuj się ze mną i porozmawiajmy o Twoim projekcie</p>
+        <a href="/contact/" class="btn">
+          Napisz do mnie →
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</article>
+
+{{ end }}
