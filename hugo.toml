@@ -1,0 +1,64 @@
+baseURL = 'https://clarops.com/'
+languageCode = 'pl-pl'
+title = 'ClarOps - Damian Jarzębowski'
+theme = 'PaperMod'
+
+[params]
+  description = "ClarOps - Profesjonalne usługi IT i DevOps"
+  author = "Damian Jarzębowski"
+  
+  # Social links
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com"
+  
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/DamianJarzebowski"
+  
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:kontakt@clarops.com"
+
+  # Home page settings
+  [params.homeInfoParams]
+    Title = "Witaj w ClarOps! 👋"
+    Content = """
+    Profesjonalne usługi IT, DevOps i Cloud Solutions.
+    
+    Pomagam firmom w automatyzacji procesów, optymalizacji infrastruktury i wdrażaniu nowoczesnych rozwiązań chmurowych.
+    """
+
+# Menu nawigacyjne
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "about"
+  name = "O mnie"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "services"
+  name = "Usługi"
+  url = "/services/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Kontakt"
+  url = "/contact/"
+  weight = 4
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Markup settings
+[markup]
+  [markup.highlight]
+    style = "monokai"
